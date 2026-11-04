@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: 3.13
       # Run linter that is set to skip in .pre-commit-config.yaml
       - uses: pre-commit/action@v3.0.1
         with:
